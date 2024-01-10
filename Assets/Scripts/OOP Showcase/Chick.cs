@@ -5,7 +5,7 @@ using UnityEngine;
 public class Chick : Animal
 {
     // ENCAPSULATION
-    private float speed = 2f;
+    private float speed = .8f;
     private float bound = 5f;
     private float jumpforce = 20f;
     // ABSTRACTION, POLYMOPHISM
@@ -13,7 +13,12 @@ public class Chick : Animal
     {
         if (transform.position.z < bound)
         {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            // transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            animalRb.velocity = new Vector3(animalRb.velocity.x, animalRb.velocity.y, speed);
+        }
+        else
+        {
+            animalRb.velocity = new Vector3(animalRb.velocity.x, animalRb.velocity.y, 0);
         }
     }
 
