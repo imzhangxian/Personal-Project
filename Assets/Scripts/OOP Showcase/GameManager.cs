@@ -6,16 +6,12 @@ namespace OOPShowcase
 {
     public class GameManager : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
+        [SerializeField] GameObject objects;
+        [SerializeField] GameObject titleScreen;
+        public void StartGame()
         {
-            
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            
+            objects.SetActive(true);
+            titleScreen.SetActive(false);
         }
     }
 
