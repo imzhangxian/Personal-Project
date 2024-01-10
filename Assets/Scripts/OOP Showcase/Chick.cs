@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Chick : Animal
 {
+    // ENCAPSULATION
     private float speed = 2f;
     private float bound = 5f;
     private float jumpforce = 20f;
+    // ABSTRACTION, POLYMOPHISM
     public override void Move()
     {
         if (transform.position.z < bound)

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITANCE
 public abstract class Animal : MonoBehaviour
 {
     protected Animator animator;
@@ -26,6 +27,7 @@ public abstract class Animal : MonoBehaviour
         Jump();
     }
 
+    // POLYMOPHISM, ABSTRACTION
     public abstract void Move();
     public abstract void MakeSound();
     public abstract void Jump();

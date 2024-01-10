@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Dog : Animal
 {
+    // ENCAPSULATION
     private float speed = 20f;
     private float bound = 30f;
     private float jumpforce = 200f;
-    // Start is called before the first frame update
+    // ABSTRACTION, POLYMOPHISM
     public override void Move()
     {
         if (transform.position.z > - bound)

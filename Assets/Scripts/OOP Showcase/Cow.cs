@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Cow : Animal
 {
+    // ENCAPSULATION
     private float speed = 5f;
     private float bound = 35;
     private float jumpforce = 1000f;
-    // Start is called before the first frame update
+    // ABSTRACTION
     public override void Move()
     {
         if (transform.position.x < bound)
